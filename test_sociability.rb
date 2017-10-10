@@ -39,10 +39,12 @@ for item in questions do
   2. нет
   3. иногда"
   user_input = nil
+
   while (user_input != 1 and user_input != 2 and user_input != 3)
     puts "Введите \"1\", \"2\" или \"3\" и нажмите \"Ввод\"."
     user_input = STDIN.gets.to_i
   end
+
   if (user_input == 1)
     score += 2
   elsif (user_input == 3)
