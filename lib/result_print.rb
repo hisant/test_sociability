@@ -4,7 +4,7 @@ class ResultPrint
     results = f2.readlines
     f2.close
 
-    STDOUT.puts "\n #{test_sociability.name}"
+    STDOUT.puts "\n #{test_sociability.name},"
     puts "\nВаш результат теста:"
 
     case test_sociability.score

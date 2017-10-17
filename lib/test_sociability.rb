@@ -1,6 +1,15 @@
 class TestSociability
+  attr_reader :name
+
+  attr_accessor :version, :score
+
   def initialize
     @score = 0
+  end
+
+  def start
+    puts @version
+    puts
     puts "Доброго времени суток!"
     puts "Представьтесь, пожалуйста"
 
@@ -27,15 +36,7 @@ class TestSociability
           user_input = STDIN.gets.to_i
         end
 
-        @score += (user_input - 1)
+        self.score += (user_input - 1)
       end
-  end
-
-  def score
-    @score
-  end
-
-  def name
-    @name
   end
 end
